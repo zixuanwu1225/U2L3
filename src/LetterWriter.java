@@ -4,7 +4,6 @@ public class LetterWriter
     public static void main(String[] args)
     {
         Letter letter = new Letter("Mr.Das");
-        letter.writeLetter();
         System.out.println();
         letter.writeLetter("Ivan");
         System.out.println();

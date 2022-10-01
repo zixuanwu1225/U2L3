@@ -3,8 +3,18 @@ public class Letter
     /** Prints out a complete letter by printing the greeting,
      Followed by the special message, followed by the closing */
 
-    public void writeLetter()
+
+    private String yourName;
+    private String toName;
+
+    public Letter(String giveName)
     {
+        yourName = giveName;
+    }
+
+    public void writeLetter(String givenName)
+    {
+        toName = givenName;
         greeting();
         specialMessage();
         closing();
@@ -12,7 +22,7 @@ public class Letter
 
     public void greeting()
     {
-        System.out.println("Hello, "+fromName());
+        System.out.println("Hello, " + toName);
     }
 
     public void specialMessage()
@@ -22,10 +32,6 @@ public class Letter
 
     public void closing()
     {
-        System.out.println("See you later!");
-    }
-    public String fromName()
-    {
-        return
+        System.out.println("By, " + yourName);
     }
 }
